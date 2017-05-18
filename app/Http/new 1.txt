@@ -1,0 +1,11 @@
+<?php
+
+
+//Route::get('/' , 'PelateController@index');
+//
+Route::get('/', function ()    {
+   return view('welcome');
+});
+Route::get('/', function ()    {
+    return view('login');
+});
