@@ -7,11 +7,10 @@ Route::get('/admin/new', 'AdminController@newProduct');
 Route::post('/admin/product/save', 'AdminController@add');
 Route::get('/admin/{id}/edit', 'AdminController@edit');
 Route::get('/admin/change', 'AdminController@changeOrder');
-///Route::patch('/admin/product/update/{id}', 'AdminController@update');
+Route::patch('/admin/product/update/{id}', 'AdminController@update');
 
 Route::put('/admin/products/update/{id}', 'AdminController@update');
-//Route::resource('books','BookController');
-
+Route::resource('books','BookController');
 
 
 
@@ -19,6 +18,7 @@ Route::put('/admin/products/update/{id}', 'AdminController@update');
 Route::get('/', function () {
     return view ('welcome');
 });
+
 
 
 Route::get('/product', 'ProductController@index');//auth einai gia to welcome anazhthsh
@@ -35,8 +35,8 @@ Route::post('/auth/login', 'Auth\AuthController@postLogin');
 Route::get('/auth/logout', 'Auth\AuthController@getLogout');
 
 // Registration routes...
-Route::get('/auth/register', 'Auth\AuthController@getRegister');
-Route::post('/auth/register', 'Auth\AuthController@postRegister');
+Route::get('auth/register', 'Auth\AuthController@getRegister');
+Route::post('auth/register', 'Auth\AuthController@postRegister');
 
 Route::get('/auth/password/email', 'Auth\PasswordController@getEmail');
 Route::post('/auth/password/email', 'Auth\PasswordController@postEmail');
