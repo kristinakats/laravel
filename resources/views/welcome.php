@@ -102,7 +102,7 @@ body {
 
  img.welcomelogo{
     position: relative;
-    right: -110px;
+    right: -160px;
 }
   .photo2 { 
       background-color:lightgray;
@@ -135,7 +135,7 @@ body {
 </style>
 
 <body>
-<nav class="navbar navbar-inverse"></a>
+<nav class="navbar navbar-inverse navbar-fixed-top"></a>
   <div class="container-fluid" >
     <div class="navbar-header">
     </div>
@@ -147,7 +147,7 @@ body {
         <button type="submit" class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button>
      </form>
       <li><a href="#"></a></li>
-      <li class="active"><a href="product">News</a></li>
+      <li><a href="product">News</a></li>
       <li><div class="dropdown">
           <button class="dropbtn">Jewels</button>
           <div class="dropdown-content">
@@ -157,7 +157,7 @@ body {
             <a href="/earring">Earrings</a>
          </div>
       </div></li>
-      <li><img src="neww.jpg" class="welcomelogo" width="150"></a></li> 
+      <li><img src="neww.jpg" class="welcomelogo" width="140"></a></li> 
   </ul>
   
   <ul class="nav navbar-nav navbar-right"> 

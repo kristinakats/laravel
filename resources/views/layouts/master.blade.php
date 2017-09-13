@@ -41,7 +41,7 @@ footer {
   }
 img.logo{
     position: relative;
-    left: -300px;
+    left: -400px;
 }
 img.logo2{
     position: relative;

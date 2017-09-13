@@ -20,7 +20,7 @@ class ProductController extends Controller
     {
 
        $keyword = \Request::get('keyword');
-       $products = DB::table('products')->where('name',$keyword)->get();
+       $products = DB::table('products')->where('name',$keyword)->orWhere('description', $keyword)->orWhere('description', 'rings')->get();
        return view('product', ['products'=> $products]);
      }
 
